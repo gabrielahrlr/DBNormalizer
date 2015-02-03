@@ -5,6 +5,7 @@ from tkinter.messagebox import *
 from tkinter.filedialog import *
 from tkinter.ttk import *
 from tkinter import ttk
+from tkinter import font
 
 
 class RightPanel(Frame):
@@ -14,19 +15,19 @@ class RightPanel(Frame):
 
 
         self.frame_one_t = frame_one(self)
-        self.frame_one_t.grid(column=1,row=2, sticky=(W,E))
+        #self.frame_one_t.grid(column=1,row=2, sticky=(W,E))
         self.frame_one_t.pack(anchor=NW, expand=0, fill=X)
 
         self.frame_two_t = frame_two(self)
-        self.frame_two_t.grid(column=1,row=3, sticky=(W,E))
+        #self.frame_two_t.grid(column=1,row=3, sticky=(W,E))
         self.frame_two_t.pack(anchor=NW, expand=1, fill=BOTH)
 
         self.frame_three_t = frame_three(self)
-        self.frame_three_t.grid(column=1,row=3, sticky=(W,E))
+        #self.frame_three_t.grid(column=1,row=3, sticky=(W,E))
         self.frame_three_t.pack(anchor=NW, expand=0, fill=X)
 
         self.frame_four_t = frame_four(self)
-        self.frame_four_t.grid(column=1,row=3, sticky=(W,E))
+        #self.frame_four_t.grid(column=1,row=3, sticky=(W,E))
         self.frame_four_t.pack(anchor=NW, expand=0, fill=X)
 
 class frame_one(Frame):
@@ -47,22 +48,24 @@ class subFrame(Frame):
         # table_name_entry = ttk.Entry(self, width=7, textvariable=table_name)
         # table_name_entry.grid(column=1, row=1, sticky=(W, E))
 
+        fonts = font.Font(size=12, weight='bold')
         self.table_label = Label(self, text="Relation Name: ")
-        self.nf_label = Label(self, text="Normal Form: ")
-
+        self.table_label.pack(anchor=NW)
         self.var_name = StringVar()
-        self.table_name = ttk.Label(self, textvariable=self.var_name)
+        self.table_name = ttk.Label(self, textvariable=self.var_name, font=fonts)
         self.table_name.pack(anchor=NW)
 
+        self.nf_label = Label(self, text="Normal Form: ")
+        self.nf_label.pack(anchor=NW)
         self.var_nf = StringVar()
-        self.normal_form = ttk.Label(self, textvariable=self.var_nf)
+        self.normal_form = ttk.Label(self, textvariable=self.var_nf, font=fonts)
         self.normal_form.pack(anchor=NW)
 
-        self.table_label.grid(column=0, row=0)
-        self.nf_label.grid(column=0, row=1)
+        #self.table_label.grid(column=0, row=0)
+        #self.nf_label.grid(column=0, row=1)
 
-        self.table_name.grid(column=1, row=0)
-        self.normal_form.grid(column=1, row=1)
+        #self.table_name.grid(column=1, row=0)
+        #self.normal_form.grid(column=1, row=1)
 
 class TableName(Frame):
     def __init__(self, parent):
