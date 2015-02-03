@@ -7,7 +7,7 @@ from DBNormalizer.model.Relation import *
 
 
 #postgresql://user:password@localhost/mydatabase
-db = create_engine('postgresql://humberto:@localhost/dbnormalizer_test')
+db = create_engine('postgresql://Gabriela:@localhost/Test')
 insp = inspect(db)
 meta = MetaData()
 meta.reflect(bind=db)

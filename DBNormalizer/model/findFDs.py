@@ -98,10 +98,9 @@ def test_fds_test(lhs, rhs, fds):
 
 
 def test_fds(lhs, rhs, relation_dict):
+
     lhs_partition = get_intersection(lhs, relation_dict)
     rhs_partition = get_intersection(rhs, relation_dict)
-#    print(lhs_partition)
-#    print(rhs_partition)
     x = True
     k = 0
     while x and k < len(lhs_partition):
