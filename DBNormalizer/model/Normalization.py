@@ -185,7 +185,8 @@ class Normalization:
     #nonPrime(rhs) checks if rhs is a non Prime attribute
     def check2NF(self,fd, lhs, rhs, candKeys):
         violation2NF = False
-        if (self.isSingleton(rhs)):
+        for r in rhs:
+            print(self.isSingleton(rhs))
             for key in candKeys:
                 if (self.isProperSubset(lhs, key)):
                     if (self.isNonPrime(rhs,candKeys)):
