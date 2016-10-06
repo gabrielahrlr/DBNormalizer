@@ -56,6 +56,6 @@ The program is divided into 3 modules. We followed the model view controller pat
 
 *Installation
 
-1. In the terminal/CMD go to the Project folder and run __main__.py. If you have OSX it will be necessary to execute it as
+In the terminal/CMD go to the Project folder and execute __main__.py. If you have OSX it will be necessary to execute it as
  python3 __main__.py.
 
