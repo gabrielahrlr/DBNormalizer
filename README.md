@@ -39,6 +39,7 @@ Normalization includes computation of:
 --------------------------------------------------------------------------------------------------------------------------------
 
 *Requirements:
+
   Python 3.4
   PostgreSQL 9.3
   Packages:
