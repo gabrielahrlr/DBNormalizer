@@ -39,13 +39,12 @@ Normalization includes computation of:
 --------------------------------------------------------------------------------------------------------------------------------
 
 *Requirements:
-
-  Python 3.4
-  PostgreSQL 9.3
-  Packages:
-  Itertools
-  sqlalchemy
-  tkinter
+ -Python 3.4
+ -PostgreSQL 9.3
+ -Packages:
+ -Itertools
+ -sqlalchemy
+ -tkinter
 
 The program is divided into 3 modules. We followed the model view controller pattern:
 
